@@ -1,0 +1,10 @@
+cn\goktech\service\IndexImgService.class
+cn\goktech\vo\ResultVO.class
+cn\goktech\controller\StudentController.class
+cn\goktech\vo\ResStatus.class
+cn\goktech\dao\IndexImgMapper.class
+cn\goktech\controller\UsingStaticController.class
+cn\goktech\beans\IndexImg.class
+cn\goktech\SpringbootApplication.class
+cn\goktech\controller\IndexController.class
+cn\goktech\service\imp\IndexImgServiceImpl.class

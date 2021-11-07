@@ -1,0 +1,37 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /springboot
+
+spring:
+  profiles:
+    include: druid
+  datasource:
+    driver-class-name:  com.mysql.cj.jdbc.Driver
+    password: 123456
+    username: root
+    url: jdbc:mysql://localhost:3306/test?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&useSSL=false
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      initial-size: 8
+      min-idle: 1
+      max-active: 20
+      max-wait: 60000
+
+
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+#Thymeleaf配置
+  thymeleaf:
+    cache: false
+    encoding: utf-8
+    mode: HTML5
+    prefix: classpath:/templates/
+    suffix: .html
+
+  devtools:
+    restart:
+      enabled: true#配置热部署
+      additional-paths: src/main/java
